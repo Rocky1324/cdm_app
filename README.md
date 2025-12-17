@@ -75,3 +75,6 @@ The app will open at `http://localhost:5173`.
 1. Open the app in **Chrome** or **Edge**.
 2. Look for the **Install Icon** in the URL bar (computer) or tap "Add to Home Screen" in the menu (mobile).
 3. The app works offline (basic caching) and launches in a standalone window.
+
+## 🚀 Deployment
+For instructions on how to deploy the app to production, see the [Deployment Guide](deployment.md).

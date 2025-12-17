@@ -8,7 +8,7 @@ from jose import JWTError, jwt
 from passlib.context import CryptContext
 
 from database import SessionLocal, engine
-import models, schemas, crud
+import os
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -23,7 +23,7 @@ app.add_middleware(
 )
 
 # --- Auth Configuration ---
-SECRET_KEY = "supersecretkey" # In production, use environment variable
+SECRET_KEY = os.getenv("SECRET_KEY", "supersecretkey") # In production, use environment variable
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
