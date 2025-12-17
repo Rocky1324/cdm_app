@@ -1,0 +1,15 @@
+{
+    "short_name": "CDM App",
+    "name": "CDM Reservation App",
+    "icons": [
+        {
+            "src": "logo.svg",
+            "type": "image/svg+xml",
+            "sizes": "192x192 512x512"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#1e1b4b",
+    "background_color": "#1e1b4b"
+}
