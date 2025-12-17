@@ -9,6 +9,7 @@ from passlib.context import CryptContext
 
 from database import SessionLocal, engine
 import os
+import models, schemas, crud
 
 models.Base.metadata.create_all(bind=engine)
 
