@@ -15,6 +15,10 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
+@app.get("/")
+def read_root():
+    return {"message": "Bienvenue sur l'API CDM Reservation", "docs": "/docs"}
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
