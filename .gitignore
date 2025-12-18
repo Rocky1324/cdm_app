@@ -1,0 +1,15 @@
+# Node
+node_modules/
+dist/
+.DS_Store
+
+# Python
+venv/
+__pycache__/
+*.pyc
+cdm.db
+test.db
+
+# Environment
+.env
+.env.local
